@@ -342,6 +342,26 @@ button {
   width: 33.333333333333336%;
 }
 
+.player__profile {
+  padding: 0 15px;
+}
+
+.player__votes {
+  border-radius: 10px;
+  background: #5ac5d4;
+  display: inline-block;
+  height: 20px;
+  width: 51px;
+  font-size: 0.6rem;
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  line-height: 20px;
+  margin-left: 6px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
 @font-face {
   font-family:'Benton';src:url("https://apps.bostonglobe.com/common/font/benton-bold.woff2") format('woff2'), url("https://apps.bostonglobe.com/common/font/benton-bold.woff") format('woff');font-weight:600;font-style:normal;
 }
