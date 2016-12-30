@@ -87,6 +87,12 @@ button {
   cursor: pointer;
 }
 
+#content {
+  margin: 0 auto;
+  padding: 0 15px;
+  max-width: 1200px;
+}
+
 .methode-graf {
   max-width: 35rem;
   width: 90%;
