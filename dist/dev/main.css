@@ -336,6 +336,36 @@ button {
   font-size: 1.2rem;
 }
 
+.journalist__sidebar li {
+  list-style-type: none;
+  margin: 1rem 0;
+}
+
+.journalist__sidebar li:last-child {
+  margin: 0;
+}
+
+.journalist__sidebar p {
+  margin: 0 0 1rem 0;
+  font-size: 0.75rem;
+}
+
+.journalist__hed {
+  font-family: Benton, Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-size: 1.6rem;
+  margin: 0 0 1rem 0;
+}
+
+.journalist__picks {
+  background: #333;
+  color: #efefef;
+  padding: 20px;
+}
+
+.journalist p.journalist__social {
+  margin: 1rem 0;
+}
+
 .player__bio {
   font-size: 0.85em;
   margin-top: 0.2rem;
