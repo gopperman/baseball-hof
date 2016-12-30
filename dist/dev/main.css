@@ -336,6 +336,11 @@ button {
   font-size: 1.2rem;
 }
 
+.player__bio {
+  font-size: 0.85em;
+  margin-top: 0.2rem;
+}
+
 .player__grid {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -356,6 +361,10 @@ button {
   padding: 0 15px;
 }
 
+.player__title {
+  font-family: Benton, Helvetica Neue, Helvetica, Arial, sans-serif;
+}
+
 .player__votes {
   border-radius: 10px;
   background: #5ac5d4;
@@ -368,6 +377,8 @@ button {
   font-style: normal;
   line-height: 20px;
   margin-left: 6px;
+  position: relative;
+  top: -2px;
   text-align: center;
   text-transform: uppercase;
 }
