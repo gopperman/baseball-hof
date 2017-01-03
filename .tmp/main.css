@@ -331,12 +331,6 @@ button {
   text-align: center;
 }
 
-.introduction__credit {
-  text-align: center;
-  margin-top: 1rem;
-  font-style: italic;
-}
-
 .introduction p {
   color: #444;
   font-size: 1.2rem;
