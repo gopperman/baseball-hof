@@ -343,12 +343,10 @@ button {
 }
 
 .journalist__sidebar li {
+  display: inline-block;
   list-style-type: none;
   margin: 1rem 0;
-}
-
-.journalist__sidebar li:last-child {
-  margin: 0;
+  width: 50%;
 }
 
 .journalist__sidebar p {
@@ -362,6 +360,10 @@ button {
   margin: 0 0 1rem 0;
 }
 
+.journalist__pick-hed {
+  font-size: 1.2rem;
+}
+
 .journalist__picks {
   background: #333;
   color: #efefef;
@@ -370,6 +372,15 @@ button {
 
 .journalist p.journalist__social {
   margin: 1rem 0;
+}
+
+.journalist a {
+  color: #4099ff;
+}
+
+.journalist svg {
+  fill: #4099ff;
+  height: 1.2em;
 }
 
 .player__bio {
@@ -448,5 +459,24 @@ button {
 
   .logo--sm {
     display: none;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .journalist {
+    position: relative;
+    padding-left: 25%;
+  }
+
+  .journalist__sidebar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 22.5%;
+  }
+
+  .journalist__sidebar li {
+    display: block;
+    width: auto;
   }
 }
