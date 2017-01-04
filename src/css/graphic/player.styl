@@ -1,4 +1,9 @@
 .player
+	&__hed
+		font-family $benton
+		margin 0 0 2rem 0
+		text-align center
+		
 	&__bio
 		font-size 0.85em
 		margin-top .2rem
@@ -34,7 +39,7 @@
 @media screen and (min-width: 481px)
 	.player
 		&__grid
-			flex-grid(2, '')	
+			flex-grid(2, 'player__profile')	
 				
 @media screen and (min-width: 990px)
 	.player
@@ -53,5 +58,3 @@
 		.player
 			&__profile
 				display flex
-//				flex-direction row
-//				flex-wrap nowrap
