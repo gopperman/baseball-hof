@@ -3,9 +3,6 @@
 		font-size 0.85em
 		margin-top .2rem
 		
-	&__grid
-		flex-grid(3, 'player__profile')
-		
 	&__profile
 		padding 0 15px
 		
@@ -26,3 +23,13 @@
 		top -2px 
 		text-align: center
 		text-transform uppercase
+
+@media screen and (min-width: 481px)
+	.player
+		&__grid
+			flex-grid(2, 'player__profile')	
+				
+@media screen and (min-width: 990px)
+	.player
+		&__grid
+			flex-grid(3, 'player__profile')
