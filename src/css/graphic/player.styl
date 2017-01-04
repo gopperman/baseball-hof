@@ -2,7 +2,14 @@
 	&__bio
 		font-size 0.85em
 		margin-top .2rem
-		
+		&__container
+			flex-basis auto
+			flex-grow 1
+	
+	&__img
+		&--container
+			display none
+			
 	&__profile
 		padding 0 15px
 		
@@ -27,9 +34,24 @@
 @media screen and (min-width: 481px)
 	.player
 		&__grid
-			flex-grid(2, 'player__profile')	
+			flex-grid(2, '')	
 				
 @media screen and (min-width: 990px)
 	.player
 		&__grid
 			flex-grid(3, 'player__profile')
+			
+		&__img
+			&--container
+				display block
+				padding-right 10px
+				min-width 80px
+				flex-grow 0
+				flex-basis 1
+			
+	.all-players
+		.player
+			&__profile
+				display flex
+//				flex-direction row
+//				flex-wrap nowrap
