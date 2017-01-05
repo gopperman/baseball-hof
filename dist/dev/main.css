@@ -502,6 +502,7 @@ section {
 
 .player__jump {
   border-top: 1px solid #e2e2df;
+  font-size: 1rem;
   padding-top: 10px;
   text-align: center;
   margin-bottom: 0;
