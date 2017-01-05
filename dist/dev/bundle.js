@@ -83,7 +83,6 @@
 	var socials = (0, _dom.selectAll)('.journalist__social--link');
 	socials.map(function (el) {
 		el.addEventListener('click', function (e) {
-			e.preventDefault();
 			var regex = /@(.)*/;
 			var s = el.textContent.match(regex);
 			if (s.length) {

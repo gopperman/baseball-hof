@@ -21,7 +21,6 @@ if (document.querySelectorAll('.g-header__share').length) {
 const socials = selectAll('.journalist__social--link')
 socials.map( el => {
 	el.addEventListener('click', e => {
-		e.preventDefault()
 		const regex =  /@(.)*/
 		const s = el.textContent.match(regex)
 		if (s.length) {
