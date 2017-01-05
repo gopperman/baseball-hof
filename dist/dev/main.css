@@ -345,10 +345,11 @@ button {
 }
 
 .introduction {
-  background: #f1f08f url("/assets/img/texture.png") no-repeat center center;
-  background-blend-mode: multiply, multiply;
-  background-size: cover, cover;
-  padding-bottom: 100px;
+  background: -webkit-linear-gradient(#f1f08f, #f1f08f), url("/assets/img/texture.png") no-repeat center center, url("/assets/img/player-hed.png") no-repeat bottom left;
+  background: linear-gradient(#f1f08f, #f1f08f), url("/assets/img/texture.png") no-repeat center center, url("/assets/img/player-hed.png") no-repeat bottom left;
+  background-blend-mode: multiply, multiply, overlay;
+  background-size: auto, cover, 100% auto;
+  padding-bottom: 42vw;
 }
 
 .introduction__container {
@@ -484,6 +485,8 @@ section {
 
 #content {
   padding: 0;
+  margin: 0;
+  max-width: none;
 }
 
 .player__hed {

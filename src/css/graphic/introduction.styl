@@ -1,9 +1,9 @@
 .introduction
-	background $lemon url(/assets/img/texture.png) no-repeat center center
-	background-blend-mode multiply, multiply
-	background-size cover, cover
+	background linear-gradient($lemon, $lemon), url(/assets/img/texture.png) no-repeat center center, url(/assets/img/player-hed.png) no-repeat bottom left
+	background-blend-mode multiply, multiply, overlay
+	background-size auto, cover, 100% auto
 	
-	padding-bottom 100px
+	padding-bottom 42vw
 	
 	&__container
 		display block
