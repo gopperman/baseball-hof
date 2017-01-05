@@ -52,7 +52,7 @@
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-	(0, _loadFont2.default)([{ family: 'Benton', suffix: 'bold' }, { family: 'Miller', suffix: 'regular' }]);
+	(0, _loadFont2.default)([{ family: 'Benton', suffix: 'bold' }, { family: 'Benton', suffix: 'regular' }, { family: 'Miller', suffix: 'regular' }, { family: 'Miller-Banner', suffix: 'regular' }]);
 
 /***/ },
 /* 1 */

@@ -13,7 +13,7 @@
 			
 	&__container
 		position relative
-		padding-bottom 2rem
+		padding-bottom 5rem
 
 	&__expand
 		background linear-gradient( 0deg, #fff, transparent );
@@ -21,7 +21,7 @@
 		font-weight bold
 		padding 4rem 0 .5rem 0
 		position absolute
-		bottom 0
+		bottom 3rem
 		left 0
 		right 0
 
@@ -39,13 +39,14 @@
 		li 
 			display inline-block
 			list-style-type none
-			margin 1rem 0
+			margin .35rem 0
 			width 50% 
 			
 		p
-			margin 0 0 1rem 0
+			margin .25rem 0 .5rem 0
 			font-size .75rem
-			font-family $sans
+			font-family $serif
+			font-style italic
 		
 	&__hed
 		font-family $benton
@@ -58,10 +59,10 @@
 	&__picks
 		background $offblack
 		color $offwhite
-		padding 20px
+		padding 20px 20px 10px 20px
 	
 	p.journalist__social
-		margin 1rem 0
+		margin .5rem 0
 		
 	a 
 		color $twitter
@@ -72,17 +73,23 @@
 		
 @media screen and (min-width: 990px)
 	.journalist
-		padding 25px 15px 0 0
+		padding 65px 15px 0 0
 		position relative
-		padding-left 25%
+		padding-left 27.5%
+	
+		&__container
+			padding-bottom 2rem
+		
+		&__expand
+			bottom 0
 		
 		&__sidebar
 			position absolute
-			top 25px
+			top 65px
 			left 15px
+			text-align right
 			width 22.5%
-			
+		
 			li
 				display block
-				text-align right
 				width auto

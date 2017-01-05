@@ -156,6 +156,30 @@ button {
   font-style: normal;
 }
 
+.miller-banner-regular {
+  font-family: Georgia, Times, serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.loaded-miller-banner-regular .miller-banner-regular {
+  font-family: 'Miller-Banner', Georgia, Times, serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.benton-regular {
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.loaded-benton-regular .benton-regular {
+  font-family: 'Benton', Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
 .ad-slot {
   text-align: center;
   border-top: 1px solid #e2e2df;
@@ -323,6 +347,7 @@ button {
 .introduction {
   background: #f1f08f url("/assets/img/texture.png") no-repeat center center;
   background-blend-mode: multiply, multiply;
+  background-size: cover, cover;
   padding-bottom: 100px;
 }
 
@@ -335,15 +360,15 @@ button {
 }
 
 .introduction__title {
-  font-family: Miller-Banner, Georgia, Times, serif;
-  font-weight: bold;
-  font-size: 60px;
+  font-size: 2.5rem;
   text-align: center;
 }
 
 .introduction__credit {
+  color: #444;
   text-align: center;
-  margin-top: 1rem;
+  margin-top: 2rem;
+  font-family: Georgia, Times, serif;
   font-style: italic;
 }
 
@@ -373,7 +398,7 @@ button {
 
 .journalist__container {
   position: relative;
-  padding-bottom: 2rem;
+  padding-bottom: 5rem;
 }
 
 .journalist__expand {
@@ -383,7 +408,7 @@ button {
   font-weight: bold;
   padding: 4rem 0 0.5rem 0;
   position: absolute;
-  bottom: 0;
+  bottom: 3rem;
   left: 0;
   right: 0;
 }
@@ -404,14 +429,15 @@ button {
 .journalist__sidebar li {
   display: inline-block;
   list-style-type: none;
-  margin: 1rem 0;
+  margin: 0.35rem 0;
   width: 50%;
 }
 
 .journalist__sidebar p {
-  margin: 0 0 1rem 0;
+  margin: 0.25rem 0 0.5rem 0;
   font-size: 0.75rem;
-  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-family: Georgia, Times, serif;
+  font-style: italic;
 }
 
 .journalist__hed {
@@ -427,11 +453,11 @@ button {
 .journalist__picks {
   background: #333;
   color: #efefef;
-  padding: 20px;
+  padding: 20px 20px 10px 20px;
 }
 
 .journalist p.journalist__social {
-  margin: 1rem 0;
+  margin: 0.5rem 0;
 }
 
 .journalist a {
@@ -464,6 +490,10 @@ section {
   font-family: Benton, Helvetica Neue, Helvetica, Arial, sans-serif;
   margin: 0 0 2rem 0;
   text-align: center;
+}
+
+.player__jump {
+  border-top: 1px solid #e2e2df;
 }
 
 .player__bio {
@@ -513,12 +543,24 @@ section {
   text-transform: uppercase;
 }
 
+.all-players {
+  padding-top: 65px;
+}
+
 @font-face {
   font-family:'Benton';src:url("https://apps.bostonglobe.com/common/font/benton-bold.woff2") format('woff2'), url("https://apps.bostonglobe.com/common/font/benton-bold.woff") format('woff');font-weight:600;font-style:normal;
 }
 
 @font-face {
   font-family:'Miller';src:url("https://apps.bostonglobe.com/common/font/miller-regular.woff2") format('woff2'), url("https://apps.bostonglobe.com/common/font/miller-regular.woff") format('woff');font-weight:400;font-style:normal;
+}
+
+@font-face {
+  font-family:'Miller-Banner';src:url("https://apps.bostonglobe.com/common/font/miller-banner-regular.woff2") format('woff2'), url("https://apps.bostonglobe.com/common/font/miller-banner-regular.woff") format('woff');font-weight:400;font-style:normal;
+}
+
+@font-face {
+  font-family:'Benton';src:url("https://apps.bostonglobe.com/common/font/benton-regular.woff2") format('woff2'), url("https://apps.bostonglobe.com/common/font/benton-regular.woff") format('woff');font-weight:400;font-style:normal;
 }
 
 @media only screen and (min-width: 35em) {
@@ -564,22 +606,34 @@ section {
 }
 
 @media screen and (min-width: 990px) {
+  .introduction__title {
+    font-size: 60px;
+  }
+
   .journalist {
-    padding: 25px 15px 0 0;
+    padding: 65px 15px 0 0;
     position: relative;
-    padding-left: 25%;
+    padding-left: 27.5%;
+  }
+
+  .journalist__container {
+    padding-bottom: 2rem;
+  }
+
+  .journalist__expand {
+    bottom: 0;
   }
 
   .journalist__sidebar {
     position: absolute;
-    top: 25px;
+    top: 65px;
     left: 15px;
+    text-align: right;
     width: 22.5%;
   }
 
   .journalist__sidebar li {
     display: block;
-    text-align: right;
     width: auto;
   }
 
