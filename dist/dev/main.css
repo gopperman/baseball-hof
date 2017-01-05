@@ -368,6 +368,7 @@ button {
 
 .introduction__credit {
   color: #444;
+  line-height: 1.2rem;
   text-align: center;
   margin-top: 2rem;
   font-family: Georgia, Times, serif;
@@ -376,7 +377,6 @@ button {
 
 .introduction p {
   color: #444;
-  font-size: 1.2rem;
 }
 
 .journalist {
@@ -405,7 +405,7 @@ button {
 
 .journalist__expand {
   background: #fff;
-  color: #4099ff;
+  color: #59889d;
   font-weight: bold;
   padding: 0 0 0.5rem 0;
   position: absolute;
@@ -429,6 +429,8 @@ button {
 
 .journalist__sidebar li {
   display: inline-block;
+  font-family: Benton, Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-weight: 400;
   list-style-type: none;
   margin: 0.35rem 0;
   width: 50%;
@@ -644,6 +646,10 @@ section {
     font-size: 60px;
   }
 
+  p {
+    font-size: 1.2rem;
+  }
+
   .journalist {
     padding: 65px 15px 0 0;
     position: relative;
@@ -668,6 +674,7 @@ section {
 
   .journalist__sidebar li {
     display: block;
+    margin: 0.5em 0;
     width: auto;
   }
 
