@@ -477,8 +477,10 @@ b {
 }
 
 .g-footer--credits {
-  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-family: Benton, Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-weight: 400;
   font-size: 0.8rem;
+  margin-bottom: 50px;
 }
 
 section {
