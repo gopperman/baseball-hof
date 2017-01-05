@@ -543,6 +543,7 @@ section {
 
 .player__with-votes {
   padding-top: 50px;
+  margin-bottom: 30px;
 }
 
 .player__votes {
