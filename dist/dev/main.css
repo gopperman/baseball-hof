@@ -392,7 +392,7 @@ button {
 }
 
 .journalist__accordion {
-  max-height: 600px;
+  max-height: 595px;
   overflow: hidden;
   -webkit-transition: all, 1s;
   transition: all, 1s;
