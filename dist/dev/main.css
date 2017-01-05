@@ -345,10 +345,11 @@ button {
 }
 
 .introduction {
-  background: -webkit-linear-gradient(#f1f08f, #f1f08f), url("/assets/img/texture.png") no-repeat center center, url("/assets/img/player-hed.png") no-repeat bottom left;
-  background: linear-gradient(#f1f08f, #f1f08f), url("/assets/img/texture.png") no-repeat center center, url("/assets/img/player-hed.png") no-repeat bottom left;
+  background: -webkit-linear-gradient(#f1f08f, #f1f08f), url("assets/img/texture.png") no-repeat center center, url("assets/img/player-hed.png") no-repeat bottom left;
+  background: linear-gradient(#f1f08f, #f1f08f), url("assets/img/texture.png") no-repeat center center, url("assets/img/player-hed.png") no-repeat bottom left;
   background-blend-mode: multiply, multiply, overlay;
   background-size: auto, cover, 100% auto;
+  max-width: none;
   padding-bottom: 42vw;
 }
 
@@ -481,6 +482,7 @@ b {
 
 section {
   padding: 0 15px;
+  max-width: 1200px;
 }
 
 #content {
@@ -530,7 +532,6 @@ section {
 
 .player__votes {
   border-radius: 10px;
-  background: #5ac5d4;
   display: inline-block;
   height: 20px;
   width: 51px;
@@ -544,6 +545,26 @@ section {
   top: -2px;
   text-align: center;
   text-transform: uppercase;
+}
+
+.player__votes-1 {
+  background: #e8f3f4;
+}
+
+.player__votes-2 {
+  background: #d1f0f4;
+}
+
+.player__votes-3 {
+  background: #b2e6ed;
+}
+
+.player__votes-4 {
+  background: #8ddbe5;
+}
+
+.player__votes-5 {
+  background: #5ac5d4;
 }
 
 .all-players {
