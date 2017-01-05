@@ -462,6 +462,8 @@ button {
 
 .journalist p.journalist__social {
   margin: 0.5rem 0;
+  font-size: 0.9rem;
+  font-style: normal;
 }
 
 .journalist a {
