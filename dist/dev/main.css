@@ -654,12 +654,19 @@ section {
   }
 
   .journalist {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     padding: 65px 15px 0 0;
     position: relative;
-    padding-left: 26%;
   }
 
   .journalist__container {
+    -webkit-box-flex: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+    -ms-flex-preferred-size: 1;
+    flex-basis: 1;
     padding-bottom: 2rem;
   }
 
@@ -668,11 +675,14 @@ section {
   }
 
   .journalist__sidebar {
-    position: absolute;
-    top: 65px;
-    left: 15px;
+    -webkit-box-flex: 0;
+    -ms-flex-positive: 0;
+    flex-grow: 0;
+    -ms-flex-preferred-size: 1;
+    flex-basis: 1;
     text-align: right;
-    width: 22.5%;
+    margin: 0 30px;
+    min-width: 290px;
   }
 
   .journalist__sidebar li {
