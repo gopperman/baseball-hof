@@ -345,12 +345,12 @@ button {
 }
 
 .introduction {
-  background: -webkit-linear-gradient(#f1f08f, #f1f08f), url("assets/img/texture.png") no-repeat center center, url("assets/img/player-hed.png") no-repeat bottom left;
-  background: linear-gradient(#f1f08f, #f1f08f), url("assets/img/texture.png") no-repeat center center, url("assets/img/player-hed.png") no-repeat bottom left;
-  background-blend-mode: multiply, multiply, overlay;
-  background-size: auto, cover, 100% auto;
+  background: -webkit-linear-gradient(#f1f08f, #f1f08f), url("assets/img/player-hed.png") no-repeat bottom left;
+  background: linear-gradient(#f1f08f, #f1f08f), url("assets/img/player-hed.png") no-repeat bottom left;
+  background-blend-mode: multiply, overlay;
+  background-size: cover, 100% auto;
   max-width: none;
-  padding-bottom: 42vw;
+  padding-bottom: 40vw;
 }
 
 .introduction__container {
@@ -404,11 +404,10 @@ button {
 }
 
 .journalist__expand {
-  background: -webkit-linear-gradient(bottom, #fff, transparent);
-  background: linear-gradient(0deg, #fff, transparent);
+  background: #fff;
   color: #4099ff;
   font-weight: bold;
-  padding: 4rem 0 0.5rem 0;
+  padding: 0 0 0.5rem 0;
   position: absolute;
   bottom: 3rem;
   left: 0;
