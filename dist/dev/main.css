@@ -496,6 +496,18 @@ section {
   max-width: none;
 }
 
+.comments {
+  border-top: 1px solid #e2e2df;
+  font-size: 1rem;
+  padding-top: 10px;
+  text-align: center;
+  margin-bottom: 0;
+}
+
+.comments__link {
+  font-weight: bold;
+}
+
 .player__hed {
   font-family: Benton, Helvetica Neue, Helvetica, Arial, sans-serif;
   font-size: 1.6rem;
