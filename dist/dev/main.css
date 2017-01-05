@@ -345,10 +345,10 @@ button {
 }
 
 .introduction {
-  background: -webkit-linear-gradient(#f1f08f, #f1f08f), url("assets/img/player-hed.png") no-repeat bottom left;
-  background: linear-gradient(#f1f08f, #f1f08f), url("assets/img/player-hed.png") no-repeat bottom left;
+  background: url("assets/img/player-hed.png") no-repeat bottom left, -webkit-linear-gradient(#f1f08f, #f1f08f);
+  background: url("assets/img/player-hed.png") no-repeat bottom left, linear-gradient(#f1f08f, #f1f08f);
   background-blend-mode: multiply, overlay;
-  background-size: cover, 100% auto;
+  background-size: 100% auto, cover;
   max-width: none;
   padding-bottom: 40vw;
 }
