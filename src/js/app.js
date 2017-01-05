@@ -1,4 +1,5 @@
 import setPathCookie from './utils/setPathCookie.js'
+import { selectAll, addClass } from './utils/dom'
 import removeMobileHover from './utils/removeMobileHover.js'
 import wireSocialButtons from './utils/wireSocialButtons.js'
 
@@ -15,3 +16,10 @@ if (document.querySelectorAll('.g-header__share').length) {
 		twitter: '.g-header__share-button--tw',
 	})
 }
+
+const expanders = selectAll('.journalist__expand')
+expanders.map( el => {
+	el.addEventListener('click', e => {
+		addClass(el, 'journalist__expand--expanded')
+	})
+})

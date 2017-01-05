@@ -50,11 +50,13 @@
 
 	var _setPathCookie2 = _interopRequireDefault(_setPathCookie);
 
-	var _removeMobileHover = __webpack_require__(3);
+	var _dom = __webpack_require__(3);
+
+	var _removeMobileHover = __webpack_require__(4);
 
 	var _removeMobileHover2 = _interopRequireDefault(_removeMobileHover);
 
-	var _wireSocialButtons = __webpack_require__(5);
+	var _wireSocialButtons = __webpack_require__(6);
 
 	var _wireSocialButtons2 = _interopRequireDefault(_wireSocialButtons);
 
@@ -73,6 +75,13 @@
 			twitter: '.g-header__share-button--tw'
 		});
 	}
+
+	var expanders = (0, _dom.selectAll)('.journalist__expand');
+	expanders.map(function (el) {
+		el.addEventListener('click', function (e) {
+			(0, _dom.addClass)(el, 'journalist__expand--expanded');
+		});
+	});
 
 /***/ },
 /* 1 */
@@ -173,6 +182,64 @@
 
 /***/ },
 /* 3 */
+/***/ function(module, exports) {
+
+	"use strict";
+
+	Object.defineProperty(exports, "__esModule", {
+		value: true
+	});
+	// DOM helper functions
+
+	// private
+	var selectionToArray = function selectionToArray(selection) {
+		var len = selection.length;
+		var result = [];
+		for (var i = 0; i < len; i++) {
+			result.push(selection[i]);
+		}
+		return result;
+	};
+
+	// public
+	var select = function select(selector) {
+		return document.querySelector(selector);
+	};
+
+	var selectAll = function selectAll(selector) {
+		return selectionToArray(document.querySelectorAll(selector));
+	};
+
+	var find = function find(el, selector) {
+		return selectionToArray(el.querySelectorAll(selector));
+	};
+
+	var removeClass = function removeClass(el, className) {
+		return el.classList.remove(className);
+	};
+
+	var addClass = function addClass(el, className) {
+		return el.classList.add(className);
+	};
+
+	var hasClass = function hasClass(el, className) {
+		return el.classList.contains(className);
+	};
+
+	var jumpTo = function jumpTo(el) {
+		if (document.body.scrollTop) document.body.scrollTop = el.offsetTop + 1;else document.documentElement.scrollTop = el.offsetTop + 1;
+	};
+
+	exports.select = select;
+	exports.selectAll = selectAll;
+	exports.find = find;
+	exports.removeClass = removeClass;
+	exports.addClass = addClass;
+	exports.hasClass = hasClass;
+	exports.jumpTo = jumpTo;
+
+/***/ },
+/* 4 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -182,7 +249,7 @@
 	});
 	exports.default = removeMobileHover;
 
-	var _isMobile = __webpack_require__(4);
+	var _isMobile = __webpack_require__(5);
 
 	var _isMobile2 = _interopRequireDefault(_isMobile);
 
@@ -214,7 +281,7 @@
 	}
 
 /***/ },
-/* 4 */
+/* 5 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -251,7 +318,7 @@
 	exports.default = isMobile;
 
 /***/ },
-/* 5 */
+/* 6 */
 /***/ function(module, exports) {
 
 	'use strict';
