@@ -186,12 +186,16 @@ button {
   padding: 1rem;
   color: #222;
   border-bottom: 1px solid #ccc;
-  background-color: #fff;
-  color: #222;
+  background-color: #333;
+  color: #fff;
 }
 
 .g-header svg {
-  fill: #222;
+  fill: #fff;
+}
+
+.g-header__title a {
+  color: #fff;
 }
 
 .g-header__inner {
@@ -317,7 +321,7 @@ button {
 }
 
 .introduction {
-  background: #fff02a url("/assets/img/texture.png") no-repeat center center;
+  background: #f1f08f url("/assets/img/texture.png") no-repeat center center;
   background-blend-mode: multiply, multiply;
   padding-bottom: 100px;
 }
