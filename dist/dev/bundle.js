@@ -56,7 +56,11 @@
 
 	var _removeMobileHover2 = _interopRequireDefault(_removeMobileHover);
 
-	var _wireSocialButtons = __webpack_require__(6);
+	var _track = __webpack_require__(6);
+
+	var _track2 = _interopRequireDefault(_track);
+
+	var _wireSocialButtons = __webpack_require__(7);
 
 	var _wireSocialButtons2 = _interopRequireDefault(_wireSocialButtons);
 
@@ -75,6 +79,18 @@
 			twitter: '.g-header__share-button--tw'
 		});
 	}
+
+	var socials = (0, _dom.selectAll)('.journalist__social--link');
+	socials.map(function (el) {
+		el.addEventListener('click', function (e) {
+			e.preventDefault();
+			var regex = /@(.)*/;
+			var s = el.textContent.match(regex);
+			if (s.length) {
+				(0, _track2.default)('Apps - Baseball HoF - Tweet - ' + s[0]);
+			}
+		});
+	});
 
 	var expanders = (0, _dom.selectAll)('.journalist__expand');
 	expanders.map(function (el) {
@@ -319,6 +335,27 @@
 
 /***/ },
 /* 6 */
+/***/ function(module, exports) {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+		value: true
+	});
+	var track = function track(value) {
+		if (window.location.hostname.indexOf('localhost') > -1) console.log(value);
+		if (typeof s_gi === 'function') {
+			var tracker = s_gi('nytbostonglobecom');
+			s.linkTrackVars = 'eVar15,channel,prop1';
+			s.linkTrackEvents = 'none';
+			tracker.tl(true, 'o', value);
+		}
+	};
+
+	exports.default = track;
+
+/***/ },
+/* 7 */
 /***/ function(module, exports) {
 
 	'use strict';

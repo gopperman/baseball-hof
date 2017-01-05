@@ -1,6 +1,7 @@
 import setPathCookie from './utils/setPathCookie.js'
 import { selectAll, addClass } from './utils/dom'
 import removeMobileHover from './utils/removeMobileHover.js'
+import track from './utils/track'
 import wireSocialButtons from './utils/wireSocialButtons.js'
 
 removeMobileHover()
@@ -16,6 +17,18 @@ if (document.querySelectorAll('.g-header__share').length) {
 		twitter: '.g-header__share-button--tw',
 	})
 }
+
+const socials = selectAll('.journalist__social--link')
+socials.map( el => {
+	el.addEventListener('click', e => {
+		e.preventDefault()
+		const regex =  /@(.)*/
+		const s = el.textContent.match(regex)
+		if (s.length) {
+			track(`Apps - Baseball HoF - Tweet - ${s[0]}`)
+		}
+	})
+})
 
 const expanders = selectAll('.journalist__expand')
 expanders.map( el => {
