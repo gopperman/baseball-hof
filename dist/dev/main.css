@@ -360,6 +360,43 @@ button {
   font-family: Georgia, Times, serif;
 }
 
+.journalist__accordion {
+  max-height: 600px;
+  overflow: hidden;
+  -webkit-transition: max-height, 0.5s;
+  transition: max-height, 0.5s;
+}
+
+.journalist__container {
+  position: relative;
+  padding-bottom: 2rem;
+}
+
+.journalist__expand {
+  background: -webkit-linear-gradient(bottom, #fff, transparent);
+  background: linear-gradient(0deg, #fff, transparent);
+  color: #4099ff;
+  font-weight: bold;
+  padding: 4rem 0 0.5rem 0;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.journalist__expand--expanded {
+  display: none;
+}
+
+.journalist__expand--expanded + .journalist__accordion {
+  max-height: none;
+}
+
+.journalist__expand:hover {
+  cursor: hand;
+  cursor: pointer;
+}
+
 .journalist__sidebar li {
   display: inline-block;
   list-style-type: none;

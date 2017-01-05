@@ -4,6 +4,35 @@
 	p 
 		font-family $serif
 		
+	&__accordion
+		max-height 600px
+		overflow hidden
+		transition max-height, .5s
+			
+	&__container
+		position relative
+		padding-bottom 2rem
+
+	&__expand
+		background linear-gradient( 0deg, #fff, transparent );
+		color $twitter
+		font-weight bold
+		padding 4rem 0 .5rem 0
+		position absolute
+		bottom 0
+		left 0
+		right 0
+
+		&--expanded 
+			display none
+			
+			& + .journalist__accordion
+				max-height none
+			
+		&:hover
+			cursor hand
+			cursor pointer
+	
 	&__sidebar	
 		li 
 			display inline-block
